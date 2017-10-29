@@ -1,6 +1,5 @@
-/* Sticky footer styles
+ Sticky footer styles
 -------------------------------------------------- */
-
 html,
 body {
   height: 100%;
@@ -13,17 +12,35 @@ body {
   height: auto !important;
   height: 100%;
   /* Negative indent footer by its height */
-  margin: 0 auto -60px;
-  /* Pad bottom by footer height */
-  padding: 0 0 60px;
+  margin: 0 auto -30px;
+  /* Pad the bottom by footer height */
+  padding: 0 0 30px;
 }
 
 /* Set the fixed height of the footer here */
+
 #footer {
+  position: absolute;
+  width:100%;
   height: 60px;
+  padding-top: 15px;
   background-color: gray;
+  color: white;
+  border-top: 5px solid #4aaaa5;
+  text-align: center;
 }
 
+/*#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  padding-top: 15px;
+  background-color: gray;
+  border-top: 5px solid #4aaaa5;
+  color: white;
+}
+*/
 
 /* Custom page CSS
 -------------------------------------------------- */
@@ -32,18 +49,117 @@ body {
 #wrap > .container {
   padding: 60px 15px 0;
 }
-/*.container .credit {
+.container .credit {
   margin: 20px 0;
-}*/
+}
 
 #footer > .container {
   padding-left: 15px;
   padding-right: 15px;
   text-align: center;
-  color: white;
 }
 
 code {
   font-size: 80%;
 }
+
+/*------------------------------------------*/
+/*Navbar/
+/*------------------------------------------*/
+#logo {
+  background-color: #4aaaa5;
+  border: 1px solid #4aaaa5;
+  color: white;
+  font-size: 2.0em;
+}
+
+
+
+/*------------------------------------------*/
+/*About Me CSS */
+/*------------------------------------------*/
+   /*profile pic*/
+.pull-left{
+  margin: 10px;
+}
+  /*about-me h2*/
+.pull-right {
+  margin: 20px;
+  font-size: 2.3em;
+  line-height: 1.5em;
+}
+.about-me-content {
+  margin: 10px;
+}
+
+/*------------------------------------------*/
+/*Connect With Me*/
+/*------------------------------------------*/
+#connect-with-me-area {
+  text-align: center;
+  margin: 10px;
+}
+
+
+a{
+    color: black;
+}
+a:link{
+text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #F66354;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+/*------------------------*/
+/*Contact Me Form*/
+/*------------------------*/
+.form-area {
+  padding: 10px;
+  background-color: #FAFAFA;
+  border: 1px solid gray;
+}
+/*----------------------*/
+/*portfolio gallery*/
+/*----------------------*/
+
+.gallery.pop {
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+}
+
+
+.gallery figure {
+  -ms-flex-preferred-size: 33.333%;
+      flex-basis: 33.333%;
+  padding: 10px;
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#pull-right-portfolio {
+  margin: 10px;
+  font-size: 1.0em;
+  line-height: static;
+}
+
+figcaption {
+  position: relative;
+  bottom: 30px;
+  background-color: #4aaaa5;
+  text-align: center;
+  color: white;
+}
+
+/*/*media queries*/
+
+
+
 
